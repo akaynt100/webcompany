@@ -1,0 +1,586 @@
+body .desktop_hidden{
+    display: none;
+}
+@media screen and (max-width: 1200px){
+    .basic_width{
+        width: 1160px;
+    }
+}
+@media screen and (min-width: 1550px){
+    .block__title{
+        width: 40.7247%;
+    }
+    .block__content{
+        width: 59.2752%;
+    }
+    .divider-competition::after{
+        left:40.6%;
+    }
+    .divider-about::after{
+        left:39%;
+    }
+}
+@media screen and (min-width: 2000px){
+    .basic_width{
+        width: 1160px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body .mobile_hidden{
+        display: none;
+    }
+    body .desktop_hidden{
+        display: block;
+    }
+    .basic_width{
+        width: 90.625%;
+    }
+    .top-banner{
+        height: auto;
+    }
+    .bg__wrapper{
+        display: none;
+    }
+    .top-banner__content{
+        position: relative;
+        height: auto;
+        min-height: 400px;
+        background: url("../images/veloservis_bg_768px.jpg") no-repeat;
+        background-size: cover;
+        padding-top: 210px;
+        padding-bottom: 30px;
+    }
+    .mouse__wrap{
+        display: none;
+    }
+
+    .top-banner__content-logo{
+        display: none;
+    }
+    .h1_title{
+        font-size: 1rem;
+    }
+
+    .top-banner__content-btns{
+        width: 90.625%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn{
+        font-size: 0.875rem;
+        padding: 11px 10px;
+    }
+    .top-banner__content-btns .btn{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .top-banner__content-btns .btn:last-child{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .top-banner__content-title{
+        margin-bottom: 35px;
+    }
+
+    .header{
+        background: transparent;
+    }
+    .header>.flex_row{
+        display: block;
+    }
+
+    .hamburger__box {
+        position: absolute;
+        width: 30px;
+        height: 20px;
+        top:25px;
+        left: 15px;
+    }
+    .hamburger__inner {
+        top: 50%;
+        display: block;
+        margin-top: -2px;
+    }
+    .hamburger__inner::before {
+        top: -8px;
+    }
+    .hamburger__inner::after {
+        bottom: -8px;
+    }
+    .hamburger__inner::after, .hamburger__inner::before {
+        display: block;
+        content: '';
+    }
+    .hamburger__inner, .hamburger__inner::after, .hamburger__inner::before {
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background-color: #fff;
+    }
+
+    .mobile__nav .nav__list{
+        position: fixed;
+        left: -3000px;
+        top: 0;
+        bottom: 0;
+        background-color: #3b3b3b;
+        width: 50%;
+        overflow: scroll;
+        -webkit-transition: all 0.35s ease;
+        -moz-transition: all 0.35s ease;
+        -o-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+    }
+    .mobile__nav .nav__list-opened{
+        left: 0;
+    }
+
+    .mobile__nav .nav__list-item{
+        float: none;
+        margin-right: 0;
+        border-top: 1px solid #2a2a2a;
+    }
+    .mobile__nav .nav__list-item:last-child{
+        border-bottom: 1px solid #2a2a2a;
+    }
+
+    .mobile__nav .nav__list-item-link{
+        display: block;
+        padding: 18px;
+    }
+
+    .nav__close{
+        position: fixed;
+        width: 40px;
+        height: 23px;
+        top: 25px;
+        background: url(../images/nav-close.png) center center no-repeat;
+        cursor: pointer;
+        left: -3000px;
+        -webkit-transition: all 0.35s ease;
+        -moz-transition: all 0.35s ease;
+        -o-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+    }
+    .nav__close-opened{
+        left: 50%;
+    }
+
+    .header__logo{
+        text-align: center;
+    }
+    .header__address{
+        text-align: center;
+    }
+    .header__address-item{
+        background: none;
+    }
+    .header__address-item img{
+        display: inline-block;
+        margin-right: 8px;
+    }
+    .header__phones{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        overflow: hidden;
+        max-height: 18px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .header__phones:hover{
+        max-height: 500px;
+        background: rgba(0,0,0,.45);
+    }
+
+
+    .block__title,
+    .block__content{
+        display: none;
+    }
+    .content__overlay{
+        position: static;
+        padding-top: 0;
+    }
+    .content__overlay.basic_width{
+        width: 100%;
+    }
+    .content__overlay .h2_title{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .about-block .h2_title{
+        padding: 40px 0 50px 0;
+        background: url("../images/about-bg-768.jpg") no-repeat;
+        background-size: cover;
+    }
+    .h2_title{
+        font-size: 2.25rem;
+    }
+    .h2_title::after{
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 35px;
+    }
+
+    .content__overlay .content{
+        width: 100%;
+        float: none;
+        padding: 30px 15px 0 15px;
+    }
+    .advantages__item{
+        width: 50%;
+        text-align: center;
+    }
+
+    .divider.divider-about{
+        padding: 30px 0;
+    }
+
+    .divider__title{
+        width:100%;
+        float: none;
+        text-align: center;
+    }
+    .divider-about::after{
+        left: 0;
+        top: 90%;
+        background: url(../images/1000-bg-768.png) left center no-repeat;
+        background-size: cover;
+    }
+    .about-advantages {
+        padding: 120px 0 60px;
+    }
+
+    .about-advantages-wrap{
+        padding: 0;
+    }
+    .about-advantages__item{
+        min-height: 260px;
+    }
+
+    .divider-competition-wrap.flex_row{
+        display: block;
+    }
+    .divider__content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .divider-competition{
+        margin-bottom: 67px;
+    }
+
+    .divider-competition::after{
+        left: 0;
+        top: 100%;
+        height: 70%;
+        background: url(../images/banner-768.png) left center no-repeat;
+    }
+
+    .divider-competition .divider__content{
+        position: absolute;
+        top: 153%;
+    }
+
+    .services-block{
+        padding-bottom: 50px;
+        -moz-box-shadow: inset 0 -10px 30px -10px rgba(0,0,0,.25);
+        -webkit-box-shadow: inset 0 -10px 30px -10px rgba(0,0,0,.25);
+        box-shadow: inset 0 -10px 30px -10px rgba(0,0,0,.25);
+    }
+
+    .services-block .left__block{
+        width: 100%;
+        float: none;
+        padding-top: 35px;
+        padding-bottom: 50px;
+        background: url(../images/services-bg-768.jpg) no-repeat;
+        background-size: cover;
+    }
+    .services-block .h2_title{
+        color: #000000;
+    }
+    .services-block .h2_title::after{
+        bottom: -15px;
+    }
+
+    .services-block .cta{
+        width: 90.625%;
+        margin: 45px auto 0 auto;
+    }
+
+    .services-price .h2_title{
+        text-align: center;
+    }
+
+    .services-price .h2_title::after{
+        bottom: -15px;
+    }
+    .service-cards-wrap{
+        display: block;
+        margin-top: 45px;
+    }
+    .service__card{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .service__card:last-child{
+        margin-bottom: 0;
+    }
+    .service__card-btns .btn{
+        padding: 16px 10px;
+    }
+
+    .contacts__wrap{
+        top: 0;
+        width: 100%;
+    }
+    .contacts{
+        float: none;
+        width: 100%;
+        text-align: center;
+        -webkit-box-shadow: 0px 0px 60px 0px #808080;
+        -moz-box-shadow:    0px 0px 60px 0px #808080;
+        box-shadow:         0px 0px 60px 0px #808080;
+    }
+    .contacts .contacts__title{
+        font-size: 2.25rem;
+        position: relative;
+    }
+    .contacts .contacts__title::after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 68px;
+        background-color: #d0180d;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: -7px;
+    }
+    .map{
+        padding-top: 380px;
+    }
+    .price {
+        padding: 40px 0 50px 0;
+    }
+    .price .h2_title{
+        text-align: center;
+    }
+    .price .h2_title::after{
+        bottom: -15px;
+    }
+    .bike__wrap{
+        width: 100%;
+        float: none;
+        background: url(../images/prices-vel-768.png) center center no-repeat;
+        background-size: contain;
+        margin-top: 150px;
+        min-height: 170px;
+    }
+    .bike__parts{
+        font-size: 0.875rem;
+    }
+    .bike__parts-horizontal{
+        margin-top: 0;
+    }
+    .bike__parts-horizontal li{
+        display: block;
+        margin-right: 0;
+
+    }
+    .bike__parts-vertical .bike__parts-vertical-sm-indent,
+    .bike__parts-vertical li:last-child,
+    .bike__parts-vertical li:first-child{
+        margin-top: 0;
+    }
+    .bike__parts li{
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .bike__parts-vertical{
+        margin-right: 0;
+    }
+    .bike__parts-vertical{
+        text-align: right;
+    }
+
+    .bike__parts li>span{
+        display: inline-block;
+        padding: 6px 5px;
+        background-color: #ffffff;
+    }
+    .bike__parts li>span span{
+        display: inline-block;
+        border-bottom: 1px dotted #000000;
+    }
+    .price__content{
+        position: relative;
+    }
+    .price__clarification{
+        position: absolute;
+        top: -100px;
+        margin: auto;
+        right: 0;
+        left: 0;
+        width: 200px;
+        min-height: 0;
+        float: none;
+        padding: 0;
+        color: #000000;
+        font-size: 0.875rem;
+        line-height: 1.4;
+        background: transparent;
+        font-family: OpenSans-Regular;
+    }
+
+    html:not(.mac-os) .scroll-disable{
+        padding-right: 0;
+    }
+    html:not(.mac-os) .scroll-disable .header {
+        left: 0;
+    }
+    html:not(.mac-os) .scroll-disable .header>.basic_width{
+        width: 90.625%;
+    }
+
+    .popup{
+        width: 90.625%;
+        height: auto;
+    }
+    .popup__close {
+        right: -11px;
+        top: -25px;
+    }
+
+    .price-table__titles{
+        width: 60%;
+    }
+    .price-table__values{
+        width: 40%;
+    }
+    .price-table__btns{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .btn{
+        min-width: 50%;
+    }
+    .advantages__item{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: 0;
+        margin-bottom: 40px;
+    }
+
+    .about-advantages__item{
+        width: 100%;
+        min-height: 0;
+        padding-bottom: 25px;
+        margin-top: 60px;
+    }
+    .divider__content .btn{
+        min-width: 0;
+        width: 100%;
+    }
+    .services__btns-wrap{
+        margin-top: 0;
+    }
+    .services__btns-wrap .btn{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .services__btns-wrap .btn:last-child{
+        margin-bottom: 0;
+    }
+    .footer .flex_row{
+        flex-direction: column;
+    }
+    .footer .flex_row>div{
+        margin-bottom: 15px;
+    }
+    .footer .flex_row>div:last-child{
+        margin-bottom: 0;
+    }
+    .footer__logo{
+        order: 1;
+    }
+    .footer__info{
+        order: 2;
+    }
+    .webcompany{
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .mobile__nav .nav__list{
+        width: 90%;
+    }
+    .nav__close{
+        top:15px;
+    }
+    .nav__close-opened{
+        left: 90%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .top-banner__content{
+        background: url("../images/bg-320.jpg") no-repeat;
+        background-size: cover;
+    }
+    .about-advantages {
+        padding: 100px 0 60px;
+    }
+    .bike__parts{
+        font-size: 0.75rem;
+    }
+    .divider-competition{
+        margin-bottom: 100px;
+    }
+    .divider-competition::after{
+        background: url(../images/banner-320.jpg) no-repeat center center;
+        background-size: cover;
+        height: 100%;
+    }
+    .h2_title{
+        font-size: 2rem;
+    }
+
+    .divider-about::after{
+        background-size: auto;
+        top:70%;
+    }
+    .divider-competition .divider__content {
+        top: 178%;
+    }
+    .nav__close-opened{
+        left: 89%;
+    }
+}
+@media screen and (max-width: 338px){
+    .divider-competition .divider__content {
+        top: 153%;
+    }
+
+}
+@media screen and (max-width: 320px){
+    .mobile__nav .nav__list{
+        width: 85%;
+    }
+    .nav__close-opened{
+        left: 86.25%;
+    }
+}

@@ -1,0 +1,165 @@
+//= templates/header-authorized.html
+    <div class="main-content">
+        <section class="container">
+            <h1 class="title">Настройки профиля</h1>
+
+            //= templates/bread-crumbs.html
+
+            <div class="content__wrap clearfix_">
+                <aside class="aside">
+                    <div class="user-nav">
+                        <ul class="user-nav-list">
+                            <li class="user-nav-item user-nav-item-with-subnav">
+                                <div class="user-nav-item__title-wrap">
+                                    <span class="user-nav-item__title">Личные данные</span>
+                                </div>
+                                <ul class="user-subnav-list">
+                                    <li class="user-nav-item">
+                                        <a href="" class="user-nav-item__title-wrap">
+                                            <span class="user-nav-item">Основная информация</span>
+                                        </a>
+                                    </li>
+                                    <li class="user-nav-item">
+                                        <a href="" class="user-nav-item__title-wrap">
+                                            <span class="user-nav-item">Контакты</span>
+                                        </a>
+                                    </li>
+                                    <li class="user-nav-item">
+                                        <a href="" class="user-nav-item__title-wrap">
+                                            <span class="user-nav-item">Образование</span>
+                                        </a>
+                                    </li>
+                                    <li class="user-nav-item">
+                                        <a href="" class="user-nav-item__title-wrap">
+                                            <span class="user-nav-item">Пароль</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="user-nav-item">
+                                <a href="" class="user-nav-item__title-wrap">
+                                    <span class="user-nav-item__title">Настройки подписки</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <div class="content">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <div class="subscribe-settings clearfix_">
+                            <div class="form-column-sm fl_l">
+                                <div class="column__title">Интересует</div>
+                                <div class="field__wrap">
+                                    <label class="field__label">
+                                    <span class="block">
+                                        <select class="field custom-select">
+                                            <option value="1" selected disabled>Выберите тип работы</option>
+                                            <option value="2">Дипломная работа</option>
+                                            <option value="2">Курсовая работа</option>
+                                            <option value="2">Реферат</option>
+                                        </select>
+                                    </span>
+                                    </label>
+                                </div>
+                                <div class="field__wrap">
+                                    <label class="field__label">
+                                    <span class="block">
+                                        <select class="field custom-select">
+                                            <option value="1" selected disabled>Город</option>
+                                            <option value="2">Дипломная работа</option>
+                                            <option value="2">Курсовая работа</option>
+                                            <option value="2">Реферат</option>
+                                        </select>
+                                    </span>
+                                    </label>
+                                </div>
+                                <div class="field__wrap">
+                                    <label class="field__label">
+                                    <span class="block">
+                                        <select class="field custom-select">
+                                            <option value="1" selected disabled>Высшее учебное заведение</option>
+                                            <option value="2">Дипломная работа</option>
+                                            <option value="2">Курсовая работа</option>
+                                            <option value="2">Реферат</option>
+                                        </select>
+                                    </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="subscribe-checkbox__wrap form-column-md fl_r">
+                                <div class="field__wrap">
+                                    <label class="field__label custom-checkbox">
+                                        <input type="checkbox" value="">
+                                        <span class="checkbox__replacer">Любой новый заказ</span>
+                                    </label>
+                                </div>
+                                <div class="field__wrap">
+                                    <label class="field__label custom-checkbox">
+                                        <input type="checkbox" value="">
+                                        <span class="checkbox__replacer">Оповещать в случае одобрения на отклик</span>
+                                    </label>
+                                </div>
+                                <div class="field__wrap">
+                                    <label class="field__label custom-checkbox">
+                                        <input type="checkbox" value="">
+                                        <span class="flex_row flex_start align_start">
+                                            <span class="checkbox__replacer"></span>
+                                            <span class="checkbox__replacer-inner-title">
+                                                Оповещать в случае отказа на отклик
+                                                <br>
+                                                <span class="xs_text">(в случае, когда любой ваш отклик получит подтверждение заказчика)</span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="field__wrap">
+                                    <label class="field__label custom-checkbox">
+                                        <input type="checkbox" value="">
+                                        <span class="flex_row flex_start align_start">
+                                            <span class="checkbox__replacer"></span>
+                                            <span class="checkbox__replacer-inner-title">
+                                                Оповещать в случае отклика
+                                                <br>
+                                                <span class="xs_text">(в случае, когда на любое ваше задание откликнется исполнитель)</span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="column__title">Связаться через:</div>
+                            <div class="field__wrap flex_row flex_start">
+                                <label class="field__label custom-checkbox">
+                                    <input type="checkbox" value="" checked>
+                                    <span class="checkbox__replacer">Электронная почта</span>
+                                </label>
+                                <label class="field__label custom-placeholder-wrap field__label-sm">
+                                    <span class="block">
+                                        <input type="email" class="field" placeholder="">
+                                    </span>
+                                    <span class="custom-placeholder">leflancer@leflance.work</span>
+                                </label>
+                            </div>
+                            <div class="field__wrap flex_row flex_start">
+                                <label class="field__label custom-checkbox">
+                                    <input type="checkbox" value="" checked>
+                                    <span class="checkbox__replacer">Viber</span>
+                                </label>
+                                <label class="field__label custom-placeholder-wrap field__label-sm">
+                                    <span class="block">
+                                        <input type="email" class="field" placeholder="">
+                                    </span>
+                                    <span class="custom-placeholder">+375 (44) 896-69-85</span>
+                                </label>
+                            </div>
+                            <div class="field__wrap">
+                                <input type="submit" class="submit__btn btn btn-md btn_green" value="Обновить подписку">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+//= templates/footer.html

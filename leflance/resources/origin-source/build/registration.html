@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Leflance</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/modifiers.css">
+    <link rel="stylesheet" href="assets/css/dev.css">
+
+    <!--[if IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <div class="wrapper-inner">
+        <header class="header gradient_theme">
+            <div class="header-inner container flex_row">
+                <div class="logo">
+                    <a href=""><img src="assets/images/logo.png" alt="" /></a>
+                </div>
+                <div class="w_half">
+                    <div class="flex_row">
+                        <a href="" class="btn btn-md-w btn_green">Заказать работу</a>
+                        <a href="" class="link white_link">Задать вопрос</a>
+                        <a href="tel:+375298569678" class="header__phone"><span class="sm_text">+375 (29)</span> <span class="lg_text">856-96-78</span></a>
+                    </div>
+                </div>
+                <div class="header__user-btns">
+                    <div>
+                        <a href="" class="btn btn-md-w btn_white-inverse">Регистрация</a>
+                    </div>
+                    <div class="header__login-btn-wrap text_center">
+                        <a href="" class="link white_link link_dotted">Авторизация</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <div class="main-content" ng-app = "registration">
+        <section class="container" ng-controller = "RegistrationController as vm">
+            <h1 class="title text_center">Регистрация</h1>
+            <form class="user-form form" novalidate name="vm.RegistrationForm" action="" method="post">
+                <div class="field__wrap">
+                    <label class="field__label custom-placeholder-wrap">
+                        <span class="block">
+                            <input
+                                    type="email"
+                                    class="field"
+                                    placeholder = ""
+                                    name = "email"
+                                    ng-model = "vm.email"
+                                    ng-pattern="vm.patternForEmail"
+                                    ng-class="{
+                                        'not-valid-field' : vm.RegistrationForm.email.$invalid && vm.RegistrationForm.email.$touched,
+                                        'valid-field' : vm.RegistrationForm.email.$valid
+                                    }"
+                                    required
+                            />
+                            <span class="field-error-message">Ошибка</span>
+                        </span>
+                        <span class="custom-placeholder">Почта</span>
+                    </label>
+                </div>
+                <div class="field__wrap">
+                    <label class="field__label custom-placeholder-wrap">
+                        <span class="block">
+                            <input
+                                    type="password"
+                                    class="field"
+                                    placeholder = ""
+                                    name = "password"
+                                    ng-model = "vm.password"
+                                    ng-class="{
+                                        'not-valid-field' : vm.RegistrationForm.password.$invalid && vm.RegistrationForm.password.$touched,
+                                        'valid-field' : vm.RegistrationForm.password.$valid
+                                    }"
+                                    required
+                            >
+                            <span class="field-error-message">Ошибка</span>
+                        </span>
+                        <span class="custom-placeholder">Пароль</span>
+                    </label>
+                </div>
+                <div class="field__wrap">
+                    <label class="field__label custom-placeholder-wrap">
+                        <span class="block">
+                            <input
+                                    type="password"
+                                    class="field"
+                                    placeholder=""
+                                    name = "passwordConfirm"
+                                    ng-model = "vm.passwordConfirm"
+                                    ng-class="{
+                                        'not-valid-field' : (vm.password != vm.passwordConfirm) && vm.RegistrationForm.passwordConfirm.$touched,
+                                        'valid-field' : (vm.password == vm.passwordConfirm) && vm.RegistrationForm.passwordConfirm.$touched && vm.RegistrationForm.passwordConfirm.$valid
+                                    }"
+                                    required
+                            >
+                            <span class="field-error-message">Ошибка</span>
+                        </span>
+                        <span class="custom-placeholder">Повторите пароль</span>
+                    </label>
+                </div>
+                <div class="field__wrap">
+                    <label class="field__label custom-checkbox">
+                        <input type="checkbox" value="" ng-model="vm.accepted">
+                        <span class="checkbox__replacer">Я принимаю <a href="" class="link default_link">пользовательское соглашение</a></span>
+                    </label>
+                </div>
+                <div class="field__wrap">
+                    <label class="field__label">
+                        <input
+                                type="submit"
+                                class="submit__btn btn btn-lg btn_green"
+                                value="регистрация"
+                                name = "submit"
+                                ng-disabled = "!vm.formValid"
+                        >
+                    </label>
+                </div>
+            </form>
+            <div class="already__registered text_center">
+                Уже зарегистрированы? <a href="" class="link default_link">Авторизуйтесь!</a>
+            </div>
+        </section>
+    </div>
+    </div>
+    <footer class="footer gradient-inverse_theme">
+        <div class="footer-top container flex_row">
+            <div class="logo">
+                <a href=""><img src="assets/images/logo.png" alt="" /></a>
+            </div>
+            <ul class="footer__nav clearfix_">
+                <li class="footer__nav-item"><a href="" class="footer__nav-link">Правила сервиса</a></li>
+                <li class="footer__nav-item"><a href="" class="footer__nav-link">Как оставить отзыв?</a></li>
+                <li class="footer__nav-item"><a href="" class="footer__nav-link">Обратная связь</a></li>
+                <li class="footer__nav-item"><a href="" class="footer__nav-link">Как откликнуться?</a></li>
+            </ul>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-inner container flex_row">
+                <div class="copyright">
+                    &#169; <span class="bold">leflance.work</span> | 2016 - 2017
+                </div>
+                <div class="webcompany">
+                    <a target="_blank" href="http://webcompany.by/">
+                        <span>Разработка сайта</span>
+                        <img src="assets/images/webcompany.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/libs/jquery-2.2.3.min.js"></script>
+    <script src="assets/js/libs/uikit/uikit.js"></script>
+    <!--<script src="assets/js/react-app/bundle.js"></script>-->
+    <script src="assets/js/libs/jquery.selectric.js"></script>
+    <script src="assets/js/libs.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dev.js"></script>
+</body>
+</html>

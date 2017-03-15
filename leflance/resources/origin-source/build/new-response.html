@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Leflance</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://unpkg.com/react-select/dist/react-select.css">-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/modifiers.css">
+    <link rel="stylesheet" href="assets/css/dev.css">
+
+    <!--[if IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <div class="wrapper-inner">
+        <header class="header header-authorized gradient_theme gradient_theme-animated">
+            <div class="header-inner container flex_row">
+                <div class="logo">
+                    <a href=""><img src="assets/images/logo.png" alt="" /></a>
+                </div>
+                <div class="user-notifications clearfix_">
+                    <div class="notification">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                        <div class="notifications__count">3</div>
+                    </div>
+                    <div class="notification">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <div class="notifications__count">999</div>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list clearfix_">
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list-link link white_link">Все заказы</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list-link link white_link">Мои отклики</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__authorized-user-btns">
+                   <div class="flex_row">
+                       <div>
+                           <a href="" class="btn btn-md-w btn_white-inverse">Заказать работу</a>
+                       </div>
+                       <div class="user-info" data-uk-dropdown>
+                          <div class="flex_row">
+                              <div class="user__name">Дмитрий</div>
+                              <div class="user__image-wrap">
+                                  <img src="assets/images/user-photo.png" alt="" class="user__image">
+                              </div>
+                              <div class="dropdown-arrow">
+                                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                              </div>
+                          </div>
+                          <div class="user-info-nav-wrap uk-dropdown">
+                              <ul class="user-info-nav">
+                                  <li class="user-info-nav__item">
+                                      <a href="" class="user-info-nav__link">Подписка</a>
+                                  </li>
+                                  <li class="user-info-nav__item">
+                                      <a href="" class="user-info-nav__link">Помощь</a>
+                                  </li>
+                                  <li class="user-info-nav__item">
+                                      <a href="" class="user-info-nav__link">Настройки</a>
+                                  </li>
+                              </ul>
+                              <div class="logout">
+                                  <a href="" class="user-info-nav__link">Выход</a>
+                              </div>
+                          </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </header>
+    <div class="main-content">
+        <section class="container">
+            <h1 class="title">Новый отклик</h1>
+
+            <div class="breadcrumbs breadcrumbs_indent">
+                <ul class="clearfix_">
+                    <li class="breadcrumbs__item"><a href="">Дмитрий Петров</a></li>
+                    <li class="breadcrumbs__item"><span>Новый заказ</span></li>
+                </ul>
+            </div>
+
+            <div class="content__wrap clearfix_">
+                <aside class="aside">
+                    <div class="user-data">
+                        <div class="user-name">Дмитрий Петров</div>
+                        <div class="user-image user-image__aside">
+                            <img src="assets/images/user-image.png" alt="">
+                        </div>
+                        <div class="user-params">
+                            <div class="user__param">
+                                <span class="param__icon-wrap">
+                                    <img src="assets/images/orders-count.png" class="param__icon" alt="">
+                                </span>
+                                <span class="param__text">Заказов: <span class="medium_bold">12</span></span>
+                            </div>
+                            <div class="user__param">
+                                <span class="param__icon-wrap">
+                                    <img src="assets/images/projects.png" class="param__icon" alt="">
+                                </span>
+                                <span class="param__text">Завершенных сделок: <span class="medium_bold">12</span></span>
+                            </div>
+                            <div class="user__param">
+                                <span class="param__icon-wrap">
+                                    <img src="assets/images/reviews-count.png" class="param__icon" alt="">
+                                </span>
+                                <span class="param__text">Отзывов: <span class="medium_bold">12</span></span>
+                            </div>
+                            <div class="user__param">
+                                <span class="param__icon-wrap">
+                                    <img src="assets/images/profile-vievs.png" class="param__icon" alt="">
+                                </span>
+                                <span class="param__text">Просмотров: <span class="medium_bold">12</span></span>
+                            </div>
+                            <div class="user__param">
+                                <span class="param__icon-wrap">
+                                    <img src="assets/images/in-service.png" class="param__icon" alt="">
+                                </span>
+                                <span class="param__text">В сервисе: <span class="medium_bold">c 25 августа 2015</span></span>
+                            </div>
+                        </div>
+                        <div class="user-show-profile">
+                            <a href="" class="add-file-btn btn btn_blue-inverse">посмотреть профиль</a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="content">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <div class="clearfix_">
+                            <div class="form-column-sm fl_l">
+                                <div class="column__title">Форма добавления отклика</div>
+                                <div class="field__wrap">
+                                    <label class="field__label custom-placeholder-wrap">
+                                        <span class="block">
+                                            <input type="text" class="field " placeholder="">
+                                        </span>
+                                        <span class="custom-placeholder">Ваш город</span>
+                                    </label>
+                                </div>
+                                <div class="field__wrap">
+                                    <label class="field__label custom-placeholder-wrap">
+                                        <span class="block">
+                                            <input type="text" class="field " placeholder="">
+                                        </span>
+                                        <span class="custom-placeholder">Выполню заказ до</span>
+                                    </label>
+                                </div>
+                                <div class="field__wrap">
+                                    <label class="field__label custom-placeholder-wrap">
+                                    <span class="block">
+                                        <textarea class="field custom-textarea" placeholder=""></textarea>
+                                    </span>
+                                        <span class="custom-placeholder">Комментарий к отклику</span>
+                                    </label>
+                                </div>
+                                <div class="captcha field__wrap">
+                                    <img src="assets/images/recap.png" alt="">
+                                </div>
+                                <div class="field__wrap">
+                                    <label class="field__label">
+                                        <input type="submit" class="submit__btn btn btn-lg btn_green" value="Добавить отклик">
+                                    </label>
+                                </div>
+                                <div class="field__wrap">
+                                    <div class="react-select"></div>
+                                </div>
+                            </div>
+                            <div class="form-column-md fl_r">
+                                <div class="column__title">Основная информация заказа</div>
+                                <div class="order-main-data">
+                                    <div class="order__el order-title">
+                                        СУРС «Новая история Европы и Америки.
+                                        Второй период»
+                                    </div>
+                                    <div class="order__el order-theme">
+                                        Реферат, Стратегический менеджмент
+                                    </div>
+                                    <div class="order__el order-description">
+                                        План «СУРСа»:<br/>
+                                        1. Силы гражданской обороны.<br/>
+                                        2. Краткая характеристика стихийных бедствий, аварий
+                                        и катастроф.<br/>
+                                        3. Приборы радиационной разведки.<br/>
+                                        4. Убежища.<br/>
+                                        5. Мероприятия, проводимые для повышения устойчивости
+                                        работы машинно-тракторного парка
+                                        и топливно-энергетического комплекса в мирное время
+                                        и при угрозе нападения.<br/>
+                                        6. Силы и средства для проведения спасательных
+                                        и неотложных работ в очагах современных средств
+                                        поражения и в районах аварий, катастроф и стихийных
+                                        бедствий.
+                                    </div>
+                                    <div class="order__el">
+                                        <div class="medium_bold">Сдать до:</div>
+                                        <div>10 октября 2016</div>
+                                    </div>
+                                    <div class="order__el order-files">
+                                        <div class="medium_bold">Файлы:</div>
+                                        <div>
+                                            <span class="custom-input-file__text">
+                                                <span class="custom-input-file__item">
+                                                    <a href="" class="link default_link custom-input-file__item-name">ТЗ.docx</a>
+                                                    <span>0.009 МБ</span>
+                                                </span>
+                                            </span>
+                                            <span class="custom-input-file__text">
+                                                <span class="custom-input-file__item">
+                                                    <a href="" class="link default_link custom-input-file__item-name">Наброски по данной теме.docx</a>
+                                                    <span>0.009 МБ</span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    <footer class="footer gradient-inverse_theme">
+        <div class="footer-top container flex_row">
+            <div class="logo">
+                <a href=""><img src="assets/images/logo.png" alt="" /></a>
+            </div>
+            <ul class="footer__nav clearfix_">
+                <li class="footer__nav-item"><a href="" class="footer__nav-link">Правила сервиса</a></li>
+                <li class="footer__nav-item"><a href="" class="footer__nav-link">Как оставить отзыв?</a></li>
+                <li class="footer__nav-item"><a href="" class="footer__nav-link">Обратная связь</a></li>
+                <li class="footer__nav-item"><a href="" class="footer__nav-link">Как откликнуться?</a></li>
+            </ul>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-inner container flex_row">
+                <div class="copyright">
+                    &#169; <span class="bold">leflance.work</span> | 2016 - 2017
+                </div>
+                <div class="webcompany">
+                    <a target="_blank" href="http://webcompany.by/">
+                        <span>Разработка сайта</span>
+                        <img src="assets/images/webcompany.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/libs/jquery-2.2.3.min.js"></script>
+    <script src="assets/js/libs/uikit/uikit.js"></script>
+    <!--<script src="assets/js/react-app/bundle.js"></script>-->
+    <script src="assets/js/libs/jquery.selectric.js"></script>
+    <script src="assets/js/libs.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dev.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/************************* Модификаторы *************************/
+
+.flex_row{
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content:space-between;
+    -ms-flex-pack: justify;
+    align-items: center;
+    -ms-flex-align: center;
+}
+.flex_start{
+    justify-content:flex-start;
+    -ms-flex-pack: start;
+}
+.align_start{
+    align-items: flex-start;
+    -ms-flex-align: start;
+}
+.flex_wrap{
+    flex-wrap: wrap;
+}
+
+.stretch{
+    align-items: stretch;
+    -ms-flex-align: stretch;
+}
+
+.fl_r{
+    float: right;
+}
+.fl_l{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.clearfix_::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix_overflow{
+    overflow: hidden;
+}
+
+.basic_width,
+.lg_width{
+    margin: 0 auto;
+}
+.basic_width{
+    width: 1130px;
+}
+.lg_width{
+    width: 1300px;
+}
+
+
+.centered{
+    margin: 0 auto;
+}
+.text_center{
+    text-align: center;
+}
+
+.bold{
+    font-family: PFBeauSansPro-Bold;
+}
+
+.inline{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.w_auto{
+    width: auto;
+}
+
+.rel{
+    position: relative;
+}
+
+
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+
+
+.d_b{
+    display: block;
+}
+
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.default_link{
+    display: inline-block;
+    color: #3798cb;
+    border-bottom: 1px solid #3798cb;
+    line-height: 1;
+}
+
+
+
+.btn_yellow-theme{
+    background-color: #fbca0b;
+    color: #272a2e;
+}

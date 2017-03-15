@@ -1,0 +1,74 @@
+//= templates/header.html
+<div class="main-content" ng-app = "login">
+    <section class="container" ng-controller = "LoginController as vm">
+        <h1 class="title text_center">Войти</h1>
+        <form class="user-form form" novalidate name="vm.LoginForm" action="" method="post">
+            <div class="field__wrap">
+                <label class="field__label custom-placeholder-wrap">
+                    <span class="block">
+                        <input
+                                type="email"
+                                class="field"
+                                placeholder=""
+                                name = "email"
+                                ng-model = "vm.email"
+                                ng-pattern="vm.patternForEmail"
+                                ng-class="{
+                                        'not-valid-field' : vm.LoginForm.email.$invalid && vm.LoginForm.email.$touched,
+                                        'valid-field' : vm.LoginForm.email.$valid
+                                    }"
+                                required
+                        >
+                        <span class="field-error-message">Ошибка</span>
+                    </span>
+                    <span class="custom-placeholder">Почта</span>
+                </label>
+            </div>
+            <div class="field__wrap">
+                <label class="field__label custom-placeholder-wrap">
+                    <span class="block">
+                        <input
+                                type="password"
+                                class="field"
+                                placeholder=""
+                                name = "password"
+                                ng-model = "vm.password"
+                                ng-class="{
+                                        'not-valid-field' : vm.LoginForm.password.$invalid && vm.LoginForm.password.$touched,
+                                        'valid-field' : vm.LoginForm.password.$valid
+                                    }"
+                                required
+                        >
+                        <span class="field-error-message">Ошибка</span>
+                    </span>
+                    <span class="custom-placeholder">Пароль</span>
+                </label>
+            </div>
+            <div class="field__wrap">
+                <div class="flex_row">
+                    <a href="" class="link default_link">Забыли почту или пароль?</a>
+                    <label class="field__label custom-checkbox">
+                        <input type="checkbox" value="" checked>
+                        <span class="checkbox__replacer">Запомнить</span>
+                    </label>
+                </div>
+            </div>
+            <div class="field__wrap">
+                <label class="field__label">
+                    <input
+                            type="submit"
+                            class="submit__btn btn btn-lg btn_green"
+                            value="войти"
+                            name = "submit"
+                            ng-disabled = "!vm.formValid"
+                    >
+                </label>
+            </div>
+        </form>
+        <div class="already__registered text_center">
+            Еще не зарегистрированы? <a href="" class="link default_link">Зарегистрируйтесь!</a>
+        </div>
+
+    </section>
+</div>
+//= templates/footer.html
